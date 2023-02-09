@@ -1,6 +1,7 @@
 tasks:
-  - name: main
-    command: ./goproxy socks -t ws -p "0.0.0.0:8880" --local-ws-method=aes-256-cfb --local-ws-password=633fd7fe016f
+  - name: "goproxy main"
+    command: |
+      ./goproxy socks -t ws -p "0.0.0.0:8880" --local-ws-method=aes-256-cfb --local-ws-password=633fd7fe016f
 ports:
   - port: 8880
     visibility: public
